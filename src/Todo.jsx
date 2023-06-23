@@ -5,7 +5,7 @@ import checkedImage from "./assets/full-tic.png";
 
 const style = {
   li: `flex justify-between items-center pl-5 bg-[url(./assets/li-bg.png)] h-24 bg-cover my-2 capitalize`,
-  liComplete: `flex justify-between items-center pl-5 bg-[url(./assets/li-bg.png)] h-24 bg-cover p-4 my-2 capitalize`,
+  liComplete: `flex justify-between items-center pl-5 bg-[url(./assets/li-bg.png)] h-24 bg-cover  my-2 capitalize`,
   row: `flex`,
   text: ` text-white ml-6 cursor-pointer`,
   textComplete: `ml-6 cursor-pointer line-through`,
