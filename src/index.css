@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: SeagramFont;
+  src: url(./assets/Seagram.ttf) format("truetype");
+}
+
+#container {
+  font-family: "SeagramFont", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlinePlus } from "react-icons/ai";
 import Todo from "./Todo";
+import plus from "./assets/plus.png";
+import "./assets/Seagram.ttf";
 import { db } from "./firebase";
 import {
   query,
@@ -17,8 +18,8 @@ const style = {
   container: ` max-w-[500px] w-full m-auto rounded-md p-4`,
   heading: `text-3xl font-bold text-center text-gray-800 p-2`,
   form: `flex justify-between`,
-  input: `border p-2 w-full text-xl`,
-  button: `border p-4 ml-2 bg-purple-500 text-slate-100 rounded-md`,
+  input: `border rounded-lg p-2 w-full text-xl`,
+  button: `h-12 w-12`,
   count: `text-center p-2`,
 };
 
@@ -65,7 +66,7 @@ function App() {
   };
 
   return (
-    <div className={style.bg}>
+    <div id="container" className={style.bg}>
       <div className={style.container}>
         <h3 className={style.heading}>Todo App</h3>
         <form onSubmit={createTodo} className={style.form}>
@@ -76,8 +77,8 @@ function App() {
             type="text"
             placeholder="Add Todo"
           ></input>
-          <button className={style.button}>
-            <AiOutlinePlus size={30} />
+          <button>
+            <img className={style.button} src={plus} />
           </button>
         </form>
         <ul>
