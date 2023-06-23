@@ -8,7 +8,7 @@ const style = {
   liComplete: `flex justify-between items-center pl-5 bg-[url(./assets/li-bg.png)] h-24 bg-cover p-4 my-2 capitalize`,
   row: `flex`,
   text: ` text-white ml-6 cursor-pointer`,
-  textComplete: `ml-2 cursor-pointer line-through`,
+  textComplete: `ml-6 cursor-pointer line-through`,
   button: `cursor-pointer flex items-center`,
   checkbox: `hidden`,
   deletebtn: `text-[#EFB833] mr-6`,
